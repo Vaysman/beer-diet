@@ -15,7 +15,8 @@ config :beet_diet, BeetDietWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "tetbKjdIG0X/0dL276S9ZPd9CtIkGlXbmBZvLDlXS0Y6UuINPGvaUwfQZet70wfZ",
   render_errors: [view: BeetDietWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: BeetDiet.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: BeetDiet.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "LuFZ4oiJ5av/vxa6WogCmk/QhatlEPwc"]
 
 # Configures Elixir's Logger
 config :logger, :console,
