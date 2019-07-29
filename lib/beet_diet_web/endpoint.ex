@@ -5,6 +5,8 @@ defmodule BeetDietWeb.Endpoint do
     websocket: [timeout: 45_000],
     longpoll: false
 
+  socket "/live", Phoenix.LiveView.Socket
+
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phx.digest
